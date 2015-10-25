@@ -98,7 +98,7 @@ class ScrollUp extends \yii\base\Widget
 		if ($this->theme) {
 			if ($this->themeDir) {
 				$path = $view->getAssetManager()->publish($this->themeDir); // you can use an alias
-                $theme = $path_theme[1].'/'. $this->theme . '.css';
+                $theme_css = $path[1].'/'. $this->theme . '.css';
 			}
             else{
                 $path = $view->getAssetManager()->publish('@bower/scrollup');
