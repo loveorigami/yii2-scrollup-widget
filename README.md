@@ -37,7 +37,7 @@ use lo\widgets\ScrollUp;
  
 ScrollUp::widget([
 	'theme' => ScrollUp::THEME_IMAGE,
-	'pluginOptions' => [
+	'options' => [
 		'scrollText' => "To top", // Text for element
 		'scrollName'=> 'scrollUp', // Element ID
 		'topDistance'=> 400, // Distance from top before showing element (px)
