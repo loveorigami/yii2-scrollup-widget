@@ -1,8 +1,24 @@
 /* Image style */
 #scrollUp {
-    background-image: url("top.png");
-    bottom: 20px;
-    right: 20px;
-    width: 38px;    /* Width of image */
-    height: 38px;   /* Height of image */
+    bottom: 1em;
+    right: 1em;
+    width: 5em;    /* Width of image */
+    height: 5em;   /* Height of image */
+}
+
+/*replace the content value with the
+corresponding value from the list below*/
+#scrollUp:before {
+    content: "\f139";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #555299;
+    font-size: 4em;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 0;
 }

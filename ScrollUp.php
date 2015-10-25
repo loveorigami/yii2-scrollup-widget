@@ -94,28 +94,26 @@ class ScrollUp extends \yii\base\Widget
 	public function registerClientScript()
 	{
 		$view = $this->getView();
-		
-		$default_dir = __DIR__ . DIRECTORY_SEPARATOR . 'themes'. DIRECTORY_SEPARATOR .self::THEME_DIR;
-		
+
 		if ($this->theme) {
-			
-			$path = $view->getAssetManager()->publish($default_dir); 
-			$theme_css = $path[1] . DIRECTORY_SEPARATOR . $this->theme . '.css'
-			
-			if($this->themeDir) {
-				$path_theme = $view->getAssetManager()->publish($this->themeDir); // you can use an alias
-				$file = $path_theme[1] . DIRECTORY_SEPARATOR . $this->theme . '.css';
-				if(file_exists($file)) $theme_css = $file;
+			if ($this->themeDir) {
+				$path = $view->getAssetManager()->publish($this->themeDir); // you can use an alias
+                $theme = $path_theme[1].'/'. $this->theme . '.css';
 			}
-			
+            else{
+                $path = $view->getAssetManager()->publish('@bower/scrollup');
+                $theme_css = $path[1] . '/css/themes/'.$this->theme . '.css';
+            }
+
 			$view->registerCSSFile($theme_css);
 			
 			if ($this->theme == self::THEME_IMAGE && isset($this->options['scrollText'])) {
 				$this->options['scrollText'] = '';
 			}
 		}
-		
-		ScrollUpAsset::register($view);
+
+        ScrollUpAsset::register($view);
+
 		$options = empty($this->options) ? '{}' : Json::encode($this->options);
 		$js = "$.scrollUp($options);";
 		$view->registerJs($js);

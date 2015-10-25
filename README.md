@@ -36,8 +36,8 @@ Once the extension is installed, simply use it in your code by :
 use lo\widgets\ScrollUp;
  
 ScrollUp::widget([
-	'theme' => ScrollUp::THEME_IMAGE,
-	//'themeDir' => '@frontend/web/css', // dir with theme file css. Default from widget
+	'theme' => ScrollUp::THEME_IMAGE, // or 'image.css' - theme file css
+	'themeDir' => '@lo/widgets/themes/default', // dir with theme file css.
 	'options' => [
 		'scrollText' => "To top", // Text for element
 		'scrollName'=> 'scrollUp', // Element ID

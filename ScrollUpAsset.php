@@ -9,7 +9,7 @@ use yii\web\AssetBundle;
  */
 class ScrollUpAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/scrollup/dist';
+    public $sourcePath = '@bower/scrollup';
 		
 	public $depends = [
         'yii\web\JqueryAsset'
@@ -19,11 +19,11 @@ class ScrollUpAsset extends AssetBundle
 	{
 		if (defined('YII_DEBUG')) {
 			$this->js = [
-				'jquery.scrollUp.js'
+				'js/jquery.scrollUp.js'
 			];
 		} else {
 			$this->js = [
-				'jquery.scrollUp.min.js'
+				'js/jquery.scrollUp.min.js'
 			];
 		}
 		return parent::init();
