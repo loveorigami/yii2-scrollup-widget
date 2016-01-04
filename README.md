@@ -37,7 +37,7 @@ use lo\widgets\ScrollUp;
  
 ScrollUp::widget([
 	'theme' => ScrollUp::THEME_IMAGE, // or 'image.css' - theme file css
-	'themeDir' => '@lo/widgets/themes/default', // dir with theme file css.
+	'themeDir' => '@vendor/loveorigami/yii2-scrollup-widget/themes/default', // dir with theme file css.
 	'options' => [
 		'scrollText' => "To top", // Text for element
 		'scrollName'=> 'scrollUp', // Element ID
