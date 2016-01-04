@@ -1,5 +1,5 @@
 <?php
-namespace lo\widgets;
+namespace lo\widgets\scrollup;
 
 use yii\web\AssetBundle;
 
