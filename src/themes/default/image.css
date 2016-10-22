@@ -9,8 +9,8 @@
 /*replace the content value with the
 corresponding value from the list below*/
 #scrollUp:before {
-    content: "\f139";
-    font-family: FontAwesome;
+    content: "\e133";
+    font-family: "Glyphicons Halflings";
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
