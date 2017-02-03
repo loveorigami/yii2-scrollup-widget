@@ -19,10 +19,9 @@
             "email": "loveorigami@mail.ru"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
 		"yiisoft/yii2": "2.*",
-        "bower-asset/scrollup": "^2.4"
+        "bower-asset/scrollup": "*"
     },
     "autoload": {
         "psr-4": {
