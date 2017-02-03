@@ -22,11 +22,11 @@ class ScrollUpAsset extends AssetBundle
     {
         if (defined('YII_DEBUG')) {
             $this->js = [
-                'js/jquery.scrollUp.js'
+                'dist/jquery.scrollUp.js'
             ];
         } else {
             $this->js = [
-                'js/jquery.scrollUp.min.js'
+                'dist/jquery.scrollUp.min.js'
             ];
         }
 
