@@ -9,7 +9,6 @@ use yii\web\AssetBundle;
  */
 class ScrollUpAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/scrollup';
 
     public $theme;
     public $themeDir;
@@ -20,13 +19,15 @@ class ScrollUpAsset extends AssetBundle
 
     public function init()
     {
+        $this->sourcePath = __DIR__ . "/assets";
+
         if (defined('YII_DEBUG')) {
             $this->js = [
-                'dist/jquery.scrollUp.js'
+                'js/jquery.scrollUp.js'
             ];
         } else {
             $this->js = [
-                'dist/jquery.scrollUp.min.js'
+                'js/jquery.scrollUp.min.js'
             ];
         }
 
@@ -42,7 +43,7 @@ class ScrollUpAsset extends AssetBundle
     {
         if (!$this->themeDir) {
             $this->css = [
-                'css/themes/' . $this->theme . '.css'
+                'themes/' . $this->theme . '.css'
             ];
         }
         parent::registerAssetFiles($view);

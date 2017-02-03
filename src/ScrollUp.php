@@ -15,8 +15,6 @@ class ScrollUp extends Widget
     const THEME_PILLS = 'pill';
     const THEME_LINK = 'link';
 
-    const THEME_DIR = 'default';
-
     /**
      * List of available animation modes
      */
@@ -28,7 +26,7 @@ class ScrollUp extends Widget
      * @var string built-in theme and dir to apply to the scrollup widget.
      */
     public $theme = self::THEME_IMAGE;
-    public $themeDir = '';
+    public $themeDir;
 
     /**
      * ScrollUp options

@@ -37,7 +37,7 @@ use lo\widgets\scrollup\ScrollUp;
  
 ScrollUp::widget([
 	'theme' => ScrollUp::THEME_IMAGE,
-	'themeDir' => '@lo/widgets/scrollup/themes/default', // dir with theme file css.
+	'themeDir' => '@path/to/our/theme', // if you want customization theme css file.
 	'options' => [
 		'scrollText' => "To top", // Text for element
 		'scrollName'=> 'scrollUp', // Element ID
