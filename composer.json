@@ -22,7 +22,7 @@
     "minimum-stability": "dev",
     "require": {
 		"yiisoft/yii2": "2.*",
-        "bower-asset/scrollup": "2.4.1"
+        "bower-asset/scrollup": "^2.4"
     },
     "autoload": {
         "psr-4": {
